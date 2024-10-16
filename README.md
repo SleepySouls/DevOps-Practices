@@ -1,5 +1,4 @@
 # Lab 01: Dùng Terraform và CloudFormation để quản lý và triển khai hạ tầng AWS
-- Dùng Terraform và CloudFormation để quản lý và triển khai tự động hạ tầng AWS.
 
 # Các thành viên trong nhóm:
 | MSSV       | Họ và tên           |
