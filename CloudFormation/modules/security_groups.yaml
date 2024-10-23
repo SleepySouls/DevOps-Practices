@@ -10,11 +10,13 @@ Resources:
           FromPort: 22
           ToPort: 22
           SourcePrefixListId: "pl-073f7512b7b9a2450"
+          Description: "Allow SSH from EC2 Instance Connect"
       SecurityGroupEgress:
         - IpProtocol: "-1"
           FromPort: 0
           ToPort: 0
           CidrIp: "0.0.0.0/0"
+          Description: "Allow all outbound traffic"
       Tags:
         - Key: "Name"
           Value: "PublicEC2SecurityGroup_lab_1"
@@ -29,11 +31,13 @@ Resources:
           FromPort: 22
           ToPort: 22
           SourceSecurityGroupId: !Ref PublicInstanceSecurityGroup
+          Description: "Allow SSH from Public EC2"
       SecurityGroupEgress:
         - IpProtocol: "-1"
           FromPort: 0
           ToPort: 0
           CidrIp: "0.0.0.0/0"
+          Description: "Allow all outbound traffic"
       Tags:
         - Key: "Name"
           Value: "PrivateEC2SecurityGroup_lab_1"
