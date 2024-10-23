@@ -40,13 +40,3 @@ resource "aws_internet_gateway" "igw" {
     Name = "IGW_lab_1"
   }
 }
-
-# Default Security Group for VPC
-resource "aws_security_group" "default_sg" {
-  vpc_id = aws_vpc.main_vpc.id
-
-  tags = {
-    Name = "default_sg_lab_1"
-  }
-}
-
