@@ -9,7 +9,7 @@ Resources:
         - IpProtocol: "tcp"
           FromPort: 22
           ToPort: 22
-          CidrIp: "0.0.0.0/0"
+          SourcePrefixListId: "pl-073f7512b7b9a2450"
       SecurityGroupEgress:
         - IpProtocol: "-1"
           FromPort: 0
